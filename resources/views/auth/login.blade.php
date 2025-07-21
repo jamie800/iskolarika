@@ -170,14 +170,14 @@
           </div>
           <a href="/forgot-password" class="forgot-link" style="text-decoration: none; color: #000000;">Forgot password?</a>
           <button type="submit" class="btn btn-primary w-100 mb-3">Log In</button>
-          <button type="button" class="btn btn-outline-secondary w-100 btn-google">
+          <a href="{{ route('google-auth') }}" class="btn btn-outline-secondary w-100 btn-google">
             <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google logo">
             Sign in with Google
-          </button>
+          </a>
           <div class="text-center mt-3">
-  <span>Don't have an account?</span>
-  <a href="{{ route('register') }}" class="text-decoration-none"><strong>Sign Up</strong></a>
-</div>
+            <span>Don't have an account?</span>
+            <a href="{{ route('register') }}" class="text-decoration-none"><strong>Sign Up</strong></a>
+          </div>
         </form>
       </div>
     </div>
